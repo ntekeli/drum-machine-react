@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "./static/css/main.183d4c9a.css",
+    "main.js": "./static/js/main.6b7dcf77.js",
+    "static/media/6oh.wav": "./static/media/6oh.1a54b324fcd600ac666c.wav",
+    "static/media/6oh_a.wav": "./static/media/6oh_a.d84fab60c85562b997c2.wav",
+    "static/media/9cy.wav": "./static/media/9cy.14348d085a7fc42b3d2a.wav",
+    "static/media/9cy_a.wav": "./static/media/9cy_a.17e796c818892783493b.wav",
+    "static/media/6cy.wav": "./static/media/6cy.38b40fb6dfe0e5689677.wav",
+    "static/media/6cy_a.wav": "./static/media/6cy_a.66e17e5a139f880a13c2.wav",
+    "static/media/8cy.wav": "./static/media/8cy.06fff4ff69b94e6a72bf.wav",
+    "static/media/8cy_a.wav": "./static/media/8cy_a.92d5cc37a9a5041affe4.wav",
+    "static/media/8bd.wav": "./static/media/8bd.17bb8c10ed676125fdd8.wav",
+    "static/media/8bd_a.wav": "./static/media/8bd_a.600e63d64ae3968b59d2.wav",
+    "static/media/6bd.wav": "./static/media/6bd.53b5286e66882167ede3.wav",
+    "static/media/6bd_a.wav": "./static/media/6bd_a.78ab7c62301cbc11e113.wav",
+    "static/media/8oh.wav": "./static/media/8oh.3364c1ace64096839025.wav",
+    "static/media/8oh_a.wav": "./static/media/8oh_a.e5612784db13cec9e3c4.wav",
+    "static/media/9bd.wav": "./static/media/9bd.30f457dfa852331d7851.wav",
+    "static/media/9bd_a.wav": "./static/media/9bd_a.c1f2832e312104ee60bd.wav",
+    "static/media/9sn.wav": "./static/media/9sn.0d2e7f9ec70a6ac7ec7c.wav",
+    "static/media/9sn_a.wav": "./static/media/9sn_a.3ede26319720a330f563.wav",
+    "static/media/8sn.wav": "./static/media/8sn.cec2acba27c664b240ae.wav",
+    "static/media/8sn_a.wav": "./static/media/8sn_a.69576e98236e175bce32.wav",
+    "static/media/9oh.wav": "./static/media/9oh.b4615ef71032d7ad043a.wav",
+    "static/media/9oh_a.wav": "./static/media/9oh_a.a1223f8159c6fde3db90.wav",
+    "static/media/6sn.wav": "./static/media/6sn.857ff1c33740e6fb092b.wav",
+    "static/media/6sn_a.wav": "./static/media/6sn_a.de5b96f8981ee5f2b9f6.wav",
+    "static/media/6ch.wav": "./static/media/6ch.4aec94d84ca1da3e502e.wav",
+    "static/media/6ch_a.wav": "./static/media/6ch_a.7bda00302388054d6022.wav",
+    "static/media/8ch.wav": "./static/media/8ch.0340c3230b01ded06845.wav",
+    "static/media/8ch_a.wav": "./static/media/8ch_a.79d9d134178b6751c221.wav",
+    "static/media/9ch.wav": "./static/media/9ch.e8e02b3b9958ff169912.wav",
+    "static/media/9ch_a.wav": "./static/media/9ch_a.a4faba42277a172fbe9b.wav",
+    "index.html": "./index.html",
+    "main.183d4c9a.css.map": "./static/css/main.183d4c9a.css.map",
+    "main.6b7dcf77.js.map": "./static/js/main.6b7dcf77.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.183d4c9a.css",
+    "static/js/main.6b7dcf77.js"
+  ]
+}
