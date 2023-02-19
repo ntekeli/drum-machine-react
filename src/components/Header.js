@@ -19,7 +19,7 @@ const Header = ({
     <div className="header">
       <div className="sub-header">
         <div className="info">
-          <span>Drum-Seq 0.1</span>
+          <span>Drum-Seq 0.11</span>
             {isPlaying ? (
               <span>{kitState}</span>
             ) : (

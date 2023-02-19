@@ -13,153 +13,67 @@ const Seq = ({
   playOh,
   playCy,
 }) => {
-  const { bPat, sPat, hPat, oPat, cPat } = gridState;
-
-  const bGrid = bPat.map((beat, index) => {
-    if (beat === 0) {
+  let patternArray = [];
+  let iterator = 0;
+  for (const pattern in gridState) {
+    const patternModificator = iterator;
+    console.log(pattern);
+    patternArray[iterator] = gridState[pattern].map((beat, index) => {
+      if (beat === 1) {
+        return (
+          <GridCell
+            isPlaying={isPlaying}
+            beatState={beatState}
+            state={1}
+            key={index}
+            index={index}
+            id={index + 16 * patternModificator}
+            gridChange={gridChange}
+          />
+        );
+      }
+      if (beat === 2) {
+        return (
+          <GridCell
+            isPlaying={isPlaying}
+            beatState={beatState}
+            state={2}
+            key={index}
+            index={index}
+            id={index + 16 * patternModificator}
+            gridChange={gridChange}
+          />
+        );
+      }
       return (
         <GridCell
           isPlaying={isPlaying}
           beatState={beatState}
-          active={false}
+          state={0}
           key={index}
           index={index}
-          id={index}
+          id={index + 16 * patternModificator}
           gridChange={gridChange}
         />
       );
-    }
-    return (
-      <GridCell
-        isPlaying={isPlaying}
-        beatState={beatState}
-        active={true}
-        key={index}
-        index={index}
-        id={index}
-        gridChange={gridChange}
-      />
-    );
-  });
-  const sGrid = sPat.map((beat, index) => {
-    if (beat === 0) {
-      return (
-        <GridCell
-          isPlaying={isPlaying}
-          beatState={beatState}
-          active={false}
-          key={index}
-          index={index}
-          id={index + 16}
-          gridChange={gridChange}
-        />
-      );
-    }
-    return (
-      <GridCell
-        isPlaying={isPlaying}
-        beatState={beatState}
-        active={true}
-        key={index}
-        index={index}
-        id={index + 16}
-        gridChange={gridChange}
-      />
-    );
-  });
-  const hGrid = hPat.map((beat, index) => {
-    if (beat === 0) {
-      return (
-        <GridCell
-          isPlaying={isPlaying}
-          beatState={beatState}
-          active={false}
-          key={index}
-          index={index}
-          id={index + 32}
-          gridChange={gridChange}
-        />
-      );
-    }
-    return (
-      <GridCell
-        isPlaying={isPlaying}
-        beatState={beatState}
-        active={true}
-        key={index}
-        index={index}
-        id={index + 32}
-        gridChange={gridChange}
-      />
-    );
-  });
-  const oGrid = oPat.map((beat, index) => {
-    if (beat === 0) {
-      return (
-        <GridCell
-          isPlaying={isPlaying}
-          beatState={beatState}
-          active={false}
-          key={index}
-          index={index}
-          id={index + 48}
-          gridChange={gridChange}
-        />
-      );
-    }
-    return (
-      <GridCell
-        isPlaying={isPlaying}
-        beatState={beatState}
-        active={true}
-        key={index}
-        index={index}
-        id={index + 48}
-        gridChange={gridChange}
-      />
-    );
-  });
-  const cGrid = cPat.map((beat, index) => {
-    if (beat === 0) {
-      return (
-        <GridCell
-          isPlaying={isPlaying}
-          beatState={beatState}
-          active={false}
-          key={index}
-          index={index}
-          id={index + 64}
-          gridChange={gridChange}
-        />
-      );
-    }
-    return (
-      <GridCell
-        isPlaying={isPlaying}
-        beatState={beatState}
-        active={true}
-        key={index}
-        index={index}
-        id={index + 64}
-        gridChange={gridChange}
-      />
-    );
-  });
+    });
+    iterator++;
+  }
 
   return (
     <div className="seq">
-        <div className="grid">
-          <p>Kick:</p>
-          {bGrid}
-          <p>Snare:</p>
-          {sGrid}
-          <p>ClHat:</p>
-          {hGrid}
-          <p>OpHat:</p>
-          {oGrid}
-          <p>Cymbal:</p>
-          {cGrid}
-        </div>
+      <div className="grid">
+        <p>Kick:</p>
+        {patternArray[0]}
+        <p>Snare:</p>
+        {patternArray[1]}
+        <p>ClHat:</p>
+        {patternArray[2]}
+        <p>OpHat:</p>
+        {patternArray[3]}
+        <p>Cymbal:</p>
+        {patternArray[4]}
+      </div>
 
       <div className="pads">
         <div onMouseDown={playBd}>

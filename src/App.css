@@ -219,6 +219,13 @@ body {
   background-color: #26547cff;
   cursor: pointer;
 }
+.grid-cell-accent {
+  margin: auto;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(16, 33, 49);
+  cursor: pointer;
+}
 .dropdown-container {
   text-align: left;
   border: 1px solid #777676;
